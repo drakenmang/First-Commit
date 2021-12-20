@@ -1,0 +1,284 @@
+body {
+  margin: 0px auto;
+  padding: 0px;
+  font-family: raleway;
+  background-image: url("img/office.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url();
+}
+
+.OBblue {
+  color: RGB(50, 212, 164);
+}
+
+.OBgrey {
+  color: RGB(176, 179, 189);
+}
+
+
+
+
+
+/********* CABECERA **********/
+
+.title__Start{
+    font-size: 24px;
+    margin-right: 1rem;
+}
+
+header{
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+}
+
+h1{
+    font-weight: 800;
+}
+
+.h1__span{
+    color: #32d4a4;
+}
+
+
+/*********FIN DE CABECERA **********/
+
+
+
+
+/****************CAJA DE LOGIN ***************/
+
+.login__button {
+    margin-top: 2rem;
+    margin-left: 0.7rem;
+    width: 28rem;
+    height: 2.5rem;
+    background-color: #32d4a4;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 8px;
+
+}
+
+.login__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: RGB(255, 255, 255);
+    position: absolute;
+    border: none;
+    overflow-y: scroll;
+
+    height: 120vh;
+    width: 39rem;
+    margin: 0px auto;
+}
+
+
+.login__box::-webkit-scrollbar {
+  display: none;
+}
+
+.mail__box {
+  height: 2.5rem;
+  width: 28.1rem;
+  margin-bottom: 2rem;
+}
+
+.mail__box input {
+  width: 100%;
+  height: 60%;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  background-color: #ebebeb;
+  border: none;
+  padding: 0.3rem;
+  font-size: 14px;
+  padding-left: 1rem;
+}
+
+
+::placeholder{
+    color:RGB(165,168,179);
+}
+
+.pass__box {
+  height: 2.5rem;
+  width: 28.1rem;
+  margin-bottom: 2rem;
+}
+
+.pass__box input {
+  width: 100%;
+  height: 60%;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  background-color: #ebebeb;
+  border: none;
+  padding: 0.3rem;
+  font-size: 14px;
+  margin-bottom: 5rem;
+  padding-left: 1rem;
+}
+
+/*************FIN DE CAJA DE LOGIN ************/
+
+
+
+
+/* Recuerdame y recover pass*/
+
+.second__block {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+.remember {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.forgot {
+  text-decoration: none;
+  color: #32d4a4;
+  margin-left: 7rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: 18rem;
+  margin-right: 5rem;
+}
+
+.footer__link {
+  color: RGB(176, 179, 189);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Fin de Recuerdame y recover pass*/
+
+
+
+
+
+
+
+
+/*************** MEDIA QUERIES**************/
+
+
+ /* ipad */
+ @media (max-width: 1017px){
+
+  body {
+    background-image: none;  
+}
+
+  .login__box{
+      width: 100vw;
+  }
+
+  footer{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+/*************** móvil**************/
+@media (max-width: 570px){
+  body {
+      background-image: none;
+        
+  }
+
+  .title__start{
+    font-size: 29px;
+    height: 3rem;
+    margin-left: 1.8rem;
+  }
+
+  header{
+    align-items: center;
+    width: 100vw;
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+}
+
+.login__box {
+  overflow-y: none;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+  .form__box{
+    width: 50vw;
+    margin-right: 6.5rem;
+  }
+
+  .mail__box input{
+  width:72vw;
+  height: 80%;
+  }
+
+  .pass__box input {
+    width:72vw;
+    height: 80%;
+  }
+
+  .login__button{
+    width: 18rem;
+    height: 3.5rem;
+    font-size: 20px;
+  }
+
+  .second__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    gap: 0.1rem;
+  }
+
+  .remember{
+    white-space: nowrap;
+    margin-left: 0.5rem;
+    
+  }
+
+  .remember__text{
+    margin-right: 1rem;
+  }
+
+  .forgot{
+    white-space: nowrap;
+    margin-left: 0px;
+  }
+
+  footer{
+    display: none;
+  }
+
+}
+
+/********FIN DE MEDIA QUERIES*********/

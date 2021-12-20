@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="icon" href="img/openbootcamp.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Bebas+Neue&family=Raleway:wght@300&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>OBHeadHunting</title>
+  </head>
+  <body>
+    <div class="background__img "style="background-image: url('img/office.jpg');">
+    <div class="login__box">
+      <header>
+        <h1 class="title__start">OpenBootcamp<span class="h1__span"> | Alumnos </span></h1>
+      </header>
+
+      <form class="form__box">
+
+        <div class="mail__box">
+          <label for="mail"><b>Email</b></label><br>
+          <input type="email" placeholder="Introduce tu correo" name="uname" required/>
+        </div>
+
+        <div class="pass__box">
+          <label for="psw"><b>Contraseña</b></label><br>
+          <input type="password" placeholder="Introduce tu contraseña" name="psw" required/><br>
+        </div>
+
+
+        <div class="second__block">
+          <label>
+            <input class="remember" type="checkbox" checked="false" name="remember" />
+            
+          </label>
+          <div class="remember__text">Recuérdame</div>
+          <div class="container">
+            <a class="forgot border OBblue" href="#">He olvidado la contraseña</a>
+          </div>
+        </div>
+
+          <button class="login__button"type="submit">Iniciar Sesión</button>
+
+
+      </form>
+
+
+
+      <footer class="footer OBgrey">
+        Copyright 2021 Open Bootcamp SL, Imagina Group<br />
+        Todos los derechos reservados<br />
+        <a class="footer__link" href="#">Política de privacidad</a>
+      </footer>
+    </div>
+  </body>
+</html>
