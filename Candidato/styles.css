@@ -1,0 +1,253 @@
+body {
+  margin: 0px auto;
+  padding: 0px;
+  font-family: raleway;
+}
+
+
+
+
+
+
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url();
+}
+
+.OBblue {
+  color: RGB(50, 212, 164);
+}
+
+.OBgrey {
+  color: RGB(176, 179, 189);
+}
+
+.OB__text{
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+
+.general__container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box__container{
+  height: 50rem;
+  width: auto;
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 18px;
+}
+/********* CABECERA **********/
+.box__head{
+  display: flex;
+  align-items: center;
+}
+
+.name__info{
+  margin-top: 2Arem;
+}
+
+.avatar{
+  display: flex;
+  width:5.1rem;
+  height: 5.1rem;
+  background-color: azure;
+  margin-right: 1rem;
+}
+
+.foto__avatar{
+  width:100%;
+  border-radius: 21px;
+  border: 4px solid lightgrey;
+}
+
+.location{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.actual__city{
+  color: lightgrey;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+/*********FIN DE CABECERA **********/
+
+
+.box__form{
+  display: flex;
+  margin-top: 2rem;
+}
+
+.names{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.3rem;
+  margin-top: -1rem;
+}
+
+
+.student__input{
+  max-height: 1rem;
+  max-width: 22rem;
+  background-color: rgb(231, 231, 231);
+  border-style: none;
+  border-radius: 10px;
+  color:lightgrey;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.select__section{
+  height: 15rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  grid-column-gap: 25px;
+}
+
+.select__item{
+  display: flex;
+  flex-direction: column;
+  height: 1rem;
+  width: 10rem;
+}
+
+.input__doc{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.cloudicon{
+  margin-top: 2px;
+  font-size: 15px;
+  margin-right: 5px;
+
+}
+
+
+.upload__again{
+  display: flex;
+  background-color: lightgrey;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  padding: 6px 7px;
+  align-items: center;
+  font-family:sans-serif;
+  cursor: pointer;
+}
+
+
+.remove{
+  background-color: rgb(226, 226, 226);
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 1rem;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor:pointer;
+   }
+
+.trahsicon{
+  font-size: 15px;
+  margin-right: 8px;
+
+}
+
+/**************** Resto de la caja  ***************/
+
+
+
+
+
+/*************FIN DE CAJA ************/
+
+
+
+
+/*************** Selects**************/
+
+
+.select_value{
+  height: 2.5rem;
+  max-width: 10rem;
+  background-color: rgb(231, 231, 231);
+  border-style: none;
+  border-radius: 10px;
+  color:lightgrey;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
+
+.tags__box{
+  display: flex;
+  align-items: center;
+}
+
+
+.select_value--tags{
+  border:none;
+  margin-top: 1rem;
+  padding: 13px 14px;
+  height: 2.5rem;
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+  border-style: none;
+  border-radius: 10px;
+  color:lightgrey;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.tags__container{
+  display: flex;
+  min-width: 50%;
+  flex-wrap: wrap;
+}
+
+.tag{
+  display: flex;
+  width: fit-content;
+  background-color: lightgrey;
+  border-radius: 20px;
+  padding: 1px;
+  margin: 1rem;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.close__cross{
+  height: 25px;
+  width: 25px;
+  margin-top: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.tag__name{
+  margin: 5px;
+}
