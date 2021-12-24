@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    margin: 0px auto;
+    padding: 50px;
+    font-family: raleway;
+  }
+  
+  
+  @font-face {
+    font-family: "Raleway", sans-serif;
+    src: url();
+  }
+  
+  .OBblue {
+    color: RGB(50, 212, 164);
+  }
+  
+  .OBgrey {
+    color: RGB(176, 179, 189);
+  }
+  
+  
+  .login__box{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid lightgrey;
+    border-radius: 20px;
+
+  }
+  
+  
+  /********* CABECERA **********/
+  
+  .title__Start{
+      font-size: 24px;
+      margin-right: 1rem;
+  }
+  
+  header{
+      margin-right: 5rem;
+      margin-bottom: 2rem;
+  }
+  
+  h1{
+      font-weight: 800;
+  }
+  
+  .h1__span{
+      color: #32d4a4;
+  }
+
+h1 .search__title{
+    width: 20%;
+}
+
+.searchbar__general{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    font-size: 15px;
+}
+
+.mglass{
+  position: absolute;
+  margin-left: 8.6rem;
+  width: 18px;
+  height: 18px;
+}
+
+.bar__itself{
+    display: flex;
+    align-items: center;
+    padding: 13.5px 14.5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 18rem;
+    height: 0.5rem;
+    margin-left: 1rem;
+    background-color: lightgrey;
+}
+
+.bar__itself::placeholder{
+  text-indent: 1rem;
+}
+
+
+/* TABLA */
+.table__test{
+  border: 1px rgb(194, 194, 194);
+  border-radius: 18px;
+  width: auto;
+}
+
+.table__test thead tr th{
+    padding: 1rem 1rem;
+    text-align: left;
+}
+
+.table__test thead tr{
+  text-align: left;
+}
+
+.table__test > tbody > tr{
+  border-bottom: 1px solid #dddddd;
+}
+
+.table__heading{
+  border: 1px solid grey;
+}
+
+
+
+.heading__info{
+  Color: lightgrey;
+  font-size: 13px;
+  align-items: center;
+  text-align: left;
+  min-width: 15.625rem;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.sorting{
+  color: var(--medium-gray);
+  border: 0px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+
+}
+
+
+.student__data{
+  color: black;
+  font-size: 16px;
+  padding: 1.1rem;
+  border-top: 1px solid lightgrey;
+}
