@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="icon" href="img/openbootcamp.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Bebas+Neue&family=Raleway:wght@300&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Formulario</title>
+  </head>
+
+  <body>
+      <div class="general__container">
+        <div class="box__container" >
+          <div class="box__head">
+              <span class="avatar">
+                <img src="img/openbootcamp.png" alt="student avatar" class="foto__avatar">
+              </span>
+              <span class="student__info">
+                <h1 class="name__info">Nombre Alumno</h1>
+                <span class="location">
+                  <img src="img/location.png" alt="location" class="location__icon">
+                  <p class="actual__city">Valencia </p>
+                  <p class="actual__city">|</p>
+                  <p class="actual__city"> España</p>
+                </span>
+              </span>
+            </div>
+            <div class="box__form">
+            <form action="#" class="student__form">
+              <span class="names">
+                <label class="OB__text">Nombre y apellidos</label>
+                <input type="text" class="student__input" name="name" value="Nombre y Apellido">
+              </span>
+
+
+
+            <span class="select__section">
+
+            <span class="select__item phone">
+            <label class="OB__text" >Nº Teléfono</label>
+            <input type="text" class="student__input" name="email" value="+34 611 47 30 25">
+            </span>
+
+            <span class="select__item email">
+              <label class="OB__text">Email</label>
+              <input type="text" class="student__input" name="phone" value="dummymail@gmail.com">
+              </span>
+
+            
+              <span class="select__item country">
+                <label class="OB__text">País</label>
+                <select type="text" class="select_value" name="country" value="España">
+                    <option value="spain" selected class="España">España</option>
+                    <option value="venezuela" class="value_select">Venezuela</option>
+                  </select>
+                </span>
+
+                <span class="select__item city">
+                  <label class="OB__text">Ciudad</label>
+                  <select type="text" class="select_value" name="city" value="España">
+                    <option value="valencia" selected class="Valencia">Valencia</option>
+                    <option value="oviedo" class="value_select">Oviedo</option>
+                  </select>
+                </span>
+
+                  <span class="select__item mobility">
+                    <label class="OB__text">Movilidad</label>
+                    <select type="text" class="select_value" name="mobility" value="España">
+                      <option value="no" selected class="No">No</option>
+                      <option value="yes" class="value_select">Si</option>
+                      <option value="nsnc" class="value_select">Depende</option>
+                    </select>
+                  </span>
+
+                    <span class="select__item presence">
+                      <label class="OB__text">Presencialidad</label>
+                      <select type="text" class="select_value" name="worktype" value="España">
+                        <option value="spain" selected class="Presencial">Presencial</option>
+                        <option value="venezuela" class="value_select">Remoto</option>
+                      </select>
+                    </span>
+
+                      </span><!-- Closing grid here-->
+       
+                      <span class="input__doc">
+                        <img src="img/upload.png" alt="cloud" class="cloudicon">
+                        <input type="file" class="custom-file-input" id="file">
+
+
+
+                        <button class="remove">
+                          <img src="img/trash.png" alt="cloud" class="trashicon">
+                          Borrar
+                        </button>
+                        </span>
+
+
+
+
+
+                <!-- SELECTOR DE LAS ETIQUETAS-->
+
+              <label class="OB__text"> Etiquetas</label>        
+              <span class="tags__box">
+
+                
+              <select onchange="addTag()" class="select_value--tags" name="tag" value="tag" id="input__tag"> 
+                <option value="default" selected disables class="value_select">Escribe para buscar...</option>
+                <option value="React" class="value_select">React</option>
+                <option value="HTML&CSS" class="value_select">HTML&CSS</option>
+                <option value="Angular" class="value_select">Angular</option>
+                <option value="Java" class="value_select">Java</option>
+                <option value="Spring" class="value_select">Spring</option>
+                <option value="PHP" class="value_select">PHP</option>
+                <option value="Javascript" class="value_select">Javascript</option>
+              </select>
+            </span>
+
+
+
+            <!--     LOS CONTENEDORES DE LAS ETIQUETAS.-->
+
+              <span class="tags__container">
+              <div id="wraptags"></div>
+              <ul class="tags__contain" id="demo"></ul>
+              </span>
+
+
+          </form>
+            </div>
+        </div>
+      </div>
+
+      <div class="pdf__container">
+        <iframe src="./document.pdf" width="50%" height="500px">
+        </iframe>
+      </div>
+
+  </body>
+  
+
+
+<script>
+    function addTag() {
+      let x = document.getElementById("input__tag").value;
+      document.getElementById("demo").innerHTML = x ;
+    }
+    </script>
+
+
+</html>
